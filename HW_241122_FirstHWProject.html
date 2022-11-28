@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My first HomeWork</title>
+</head>
+
+<body>
+    
+
+    <script>
+        alert("Hello! How are you?");
+        let name = prompt("What's your name?"); 
+        if (confirm(name + ", do you use any social network site?")) {
+            let sn_site = prompt ("What social networks do you use? TikTok, Instagram, Facebook, Twitter?");
+            if (sn_site == "TikTok") {
+                window.location.href = 'https://www.tiktok.com';
+            } else if (sn_site == "Instagram") {
+                window.location.href = 'https://www.instagram.com/';
+            } else if (sn_site == "Facebook") {
+                window.location.href = 'https://www.facebook.com/';
+            } else if (sn_site == "Twitter") {
+                window.location.href = 'https://twitter.com/';
+            } else {
+                alert("Location is unknown");
+            }
+        }
+    </script>
+</body>
+
+</html>
